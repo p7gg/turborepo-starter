@@ -11,11 +11,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
 		tsconfigRootDir: __dirname,
-		project: [
-			// './apps/*/tsconfig.json',
-			'./packages/*/tsconfig.json',
-			'./tsconfig.json',
-		], // Allows for the use of rules which require parserServices to be generated
+		project: ['./apps/*/tsconfig.json', './packages/*/tsconfig.json', './tsconfig.json'], // Allows for the use of rules which require parserServices to be generated
 	},
 	rules: {
 		// Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
