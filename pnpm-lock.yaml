@@ -4,11 +4,19 @@ importers:
 
   .:
     specifiers:
+      '@types/node': ^18.14.0
       turbo: ^1.8.1
+      typescript: ^4.9.5
     devDependencies:
+      '@types/node': 18.14.0
       turbo: 1.8.1
+      typescript: 4.9.5
 
 packages:
+
+  /@types/node/18.14.0:
+    resolution: {integrity: sha512-5EWrvLmglK+imbCJY0+INViFWUHg1AHel1sq4ZVSfdcNqGy9Edv3UB9IIzzg+xPaUcAgZYcfVs2fBcwDeZzU0A==}
+    dev: true
 
   /turbo-darwin-64/1.8.1:
     resolution: {integrity: sha512-H7pxGF/vsYG7kbY+vB8h+3r8VXn2L6hhYQi0XWA+EjZ1e2zu7+TzEMRWFYmvJPx8TRo5cV5txtg0I22/Y7bxUA==}
@@ -69,4 +77,10 @@ packages:
       turbo-linux-arm64: 1.8.1
       turbo-windows-64: 1.8.1
       turbo-windows-arm64: 1.8.1
+    dev: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true

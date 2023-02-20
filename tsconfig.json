@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"lib": ["esnext", "dom", "dom.iterable"],
+		"target": "es2020",
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"baseUrl": ".",
+		"typeRoots": ["./node_modules/@types", "./types"],
+		"paths": {
+			"@acme/core": ["packages/core/src"],
+			"@acme/core/*": ["packages/core/src/*"],
+			"$test/*": ["test/*"]
+		},
+		"types": ["node"]
+	},
+	"include": [".eslintrc.js"],
+	"exclude": ["node_modules"]
+}
