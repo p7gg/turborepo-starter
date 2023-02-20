@@ -14,6 +14,8 @@ importers:
       eslint-plugin-no-only-tests: ^3.1.0
       eslint-plugin-turbo: ^0.0.8
       eslint-plugin-unicorn: ^45.0.2
+      prettier: ^2.8.4
+      prettier-plugin-organize-imports: ^3.2.2
       turbo: ^1.8.1
       typescript: ^4.9.5
     devDependencies:
@@ -27,6 +29,8 @@ importers:
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-turbo: 0.0.8_eslint@8.34.0
       eslint-plugin-unicorn: 45.0.2_eslint@8.34.0
+      prettier: 2.8.4
+      prettier-plugin-organize-imports: 3.2.2_silln3pw57har7jydmecgzoypa
       turbo: 1.8.1
       typescript: 4.9.5
 
@@ -1392,6 +1396,29 @@ packages:
   /prepend-http/2.0.0:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /prettier-plugin-organize-imports/3.2.2_silln3pw57har7jydmecgzoypa:
+    resolution: {integrity: sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA==}
+    peerDependencies:
+      '@volar/vue-language-plugin-pug': ^1.0.4
+      '@volar/vue-typescript': ^1.0.4
+      prettier: '>=2.0'
+      typescript: '>=2.9'
+    peerDependenciesMeta:
+      '@volar/vue-language-plugin-pug':
+        optional: true
+      '@volar/vue-typescript':
+        optional: true
+    dependencies:
+      prettier: 2.8.4
+      typescript: 4.9.5
+    dev: true
+
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /pseudomap/1.0.2:

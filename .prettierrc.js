@@ -1,0 +1,27 @@
+/** @type {import("prettier").Config} */
+module.exports = {
+	printWidth: 100,
+	trailingComma: 'all',
+	tabWidth: 2,
+	semi: false,
+	singleQuote: true,
+	bracketSpacing: true,
+	arrowParens: 'always',
+	endOfLine: 'auto',
+	useTabs: true,
+	plugins: [require.resolve('prettier-plugin-organize-imports')],
+	importOrder: [
+		'^(solid/(.*)$)|^(solid$)',
+		'<THIRD_PARTY_MODULES>',
+		'^@acme/(.*)$',
+		'',
+		'^~/(.*)$',
+		'^[./]',
+	],
+	importOrderSeparation: false,
+	importOrderSortSpecifiers: true,
+	importOrderBuiltinModulesToTop: true,
+	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+	importOrderMergeDuplicateImports: true,
+	importOrderCombineTypeAndValueImports: true,
+}
