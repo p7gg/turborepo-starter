@@ -9,7 +9,8 @@
 		"lint:fix": "pnpm lint -- --fix && manypkg fix",
 		"format": "prettier \"**/*.{js,ts,json,css,tsx,jsx,md,html}\" --ignore-unknown",
 		"format:write": "pnpm format --write",
-		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules"
+		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules",
+		"update-deps": "taze -w -r -I"
 	},
 	"packageManager": "pnpm@7.27.1",
 	"engines": {
@@ -39,5 +40,8 @@
 		"tsx": "^3.12.3",
 		"turbo": "^1.8.1",
 		"typescript": "^4.9.5"
+	},
+	"devDependencies": {
+		"taze": "^0.8.5"
 	}
 }
