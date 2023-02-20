@@ -6,7 +6,7 @@
 		"build": "turbo run build",
 		"type-check": "turbo type-check",
 		"lint": "turbo lint",
-		"lint-fix": "turbo lint -- --fix && manypkg fix",
+		"lint:fix": "pnpm lint -- --fix && manypkg fix",
 		"format": "prettier \"**/*.{js,ts,json,css,tsx,jsx,md,html}\" --ignore-unknown",
 		"format:write": "pnpm format --write",
 		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules"

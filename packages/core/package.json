@@ -36,13 +36,13 @@
 		"build": "vite build",
 		"dev": "vite serve ./dev",
 		"clean": "tsx ../../scripts/clean.ts .turbo dist coverage node_modules",
-		"lint": "eslint --max-warnings 0 \"src/**/*.ts*\""
+		"lint": "eslint --ext \".js,.ts,.tsx\" --ignore-path ../../.gitignore --report-unused-disable-directives src"
 	},
 	"devDependencies": {
+		"rollup-preset-solid": "^2.0.1",
 		"solid-js": "^1.6.11",
 		"vite": "^4.1.2",
-		"vite-plugin-solid": "^2.5.0",
-		"rollup-preset-solid": "^2.0.1"
+		"vite-plugin-solid": "^2.5.0"
 	},
 	"peerDependencies": {
 		"solid-js": "^1.6.0"
