@@ -5,6 +5,9 @@
 			"outputs": [],
 			"cache": false
 		},
+		"type-check": {
+			"cache": false
+		},
 		"clean": {
 			"cache": false
 		},

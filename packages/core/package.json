@@ -36,7 +36,8 @@
 		"build": "vite build",
 		"dev": "vite serve ./dev",
 		"clean": "tsx ../../scripts/clean.ts .turbo dist coverage node_modules",
-		"lint": "eslint --ext \".js,.ts,.tsx\" --ignore-path ../../.gitignore --report-unused-disable-directives src"
+		"lint": "eslint --ext \".js,.ts,.tsx\" --ignore-path ../../.gitignore --report-unused-disable-directives src",
+		"type-check": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"rollup-preset-solid": "^2.0.1",

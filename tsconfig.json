@@ -8,6 +8,7 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true,
 		"noEmit": true,
 		"allowJs": true,
 		"checkJs": true,

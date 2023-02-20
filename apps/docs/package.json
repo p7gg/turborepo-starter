@@ -8,7 +8,8 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"clean": "tsx ../../scripts/clean.ts .turbo dist coverage node_modules",
-		"lint": "eslint --ext \".js,.ts,.tsx\" --ignore-path ../../.gitignore --report-unused-disable-directives src"
+		"lint": "eslint --ext \".js,.ts,.tsx\" --ignore-path ../../.gitignore --report-unused-disable-directives src",
+		"type-check": "tsc --noEmit"
 	},
 	"license": "MIT",
 	"devDependencies": {
