@@ -17,11 +17,10 @@
 		"typeRoots": ["./node_modules/@types", "./types"],
 		"paths": {
 			"@acme/core": ["packages/core/src"],
-			"@acme/core/*": ["packages/core/src/*"],
-			"$test/*": ["test/*"]
+			"@acme/core/*": ["packages/core/src/*"]
 		},
 		"types": ["node"]
 	},
-	"include": ["scripts", ".eslintrc.js"],
+	"include": ["packages", "scripts", ".eslintrc.js"],
 	"exclude": ["node_modules"]
 }

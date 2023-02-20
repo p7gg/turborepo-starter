@@ -1,0 +1,50 @@
+{
+	"name": "@acme/core",
+	"version": "0.0.0",
+	"description": "Acme core package.",
+	"keywords": [
+		"solid"
+	],
+	"homepage": "https://github.com/p7gg/acme/tree/main/packages/core#readme",
+	"bugs": {
+		"url": "https://github.com/p7gg/acme/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/p7gg/acme.git"
+	},
+	"license": "MIT",
+	"author": "Gabriel Silva <gbos360@hotmail.com>",
+	"contributors": [],
+	"type": "module",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"solid": "./dist/source/index.jsx",
+			"import": "./dist/esm/index.js",
+			"browser": "./dist/esm/index.js",
+			"require": "./dist/cjs/index.js",
+			"node": "./dist/cjs/index.js"
+		}
+	},
+	"files": [
+		"dist/**"
+	],
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite serve ./dev",
+		"clean": "tsx ../../scripts/clean.ts .turbo dist coverage node_modules",
+		"lint": "eslint --max-warnings 0 \"src/**/*.ts*\""
+	},
+	"devDependencies": {
+		"solid-js": "^1.6.11",
+		"vite": "^4.1.2",
+		"vite-plugin-solid": "^2.5.0",
+		"rollup-preset-solid": "^2.0.1"
+	},
+	"peerDependencies": {
+		"solid-js": "^1.6.0"
+	}
+}

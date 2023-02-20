@@ -13,7 +13,7 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 		project: [
 			// './apps/*/tsconfig.json',
-			//  './packages/*/tsconfig.json',
+			'./packages/*/tsconfig.json',
 			'./tsconfig.json',
 		], // Allows for the use of rules which require parserServices to be generated
 	},
