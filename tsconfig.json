@@ -22,6 +22,6 @@
 		},
 		"types": ["node"]
 	},
-	"include": ["apps", "packages", "scripts", ".eslintrc.js"],
+	"include": ["apps", "packages", "scripts", ".eslintrc.js", "plopfile.js"],
 	"exclude": ["node_modules"]
 }
