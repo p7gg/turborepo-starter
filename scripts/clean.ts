@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import { findClosestPackageJson, r } from './utils'
 import * as c from 'colorette'
 import { lstat, pathExists, remove } from 'fs-extra'
 
@@ -6,7 +7,6 @@ const root = process.cwd()
 const pkgJson = findClosestPackageJson(root)
 const dirsToClean = process.argv.slice(2)
 
-import { findClosestPackageJson, r } from './utils'
 void (async () => {
 	try {
 		if (!dirsToClean.length) {
