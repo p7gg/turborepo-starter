@@ -1,0 +1,5 @@
+'📚 docs':
+  - any: ['apps/docs/**', '!apps/docs/**/package.json']
+
+'@acme/core':
+  - any: ['packages/core/**', '!packages/core/package.json']
