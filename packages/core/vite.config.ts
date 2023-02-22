@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+
 import withSolid from 'rollup-preset-solid'
 import { defineConfig } from 'vite'
 

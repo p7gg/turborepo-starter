@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
-import { findClosestPackageJson, r } from './utils'
+
 import * as c from 'colorette'
 import { lstat, pathExists, remove } from 'fs-extra'
+
+import { findClosestPackageJson, r } from './utils'
 
 const root = process.cwd()
 const pkgJson = findClosestPackageJson(root)

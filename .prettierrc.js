@@ -9,7 +9,7 @@ module.exports = {
 	arrowParens: 'always',
 	endOfLine: 'auto',
 	useTabs: true,
-	plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
+	plugins: [require.resolve('@serverless-guru/prettier-plugin-import-order')],
 	importOrder: [
 		'^(solid-js/(.*)$)|^(solid-js$)',
 		'<THIRD_PARTY_MODULES>',
@@ -18,7 +18,11 @@ module.exports = {
 		'^~/(.*)$',
 		'^[./]',
 	],
-	importOrderSeparation: true,
-	importOrderSortSpecifiers: true,
+	importOrderTypeImportsToBottom: true,
+	importOrderBuiltinModulesToTop: true,
+	importOrderCaseInsensitive: false,
 	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+	importOrderMergeDuplicateImports: true,
+	importOrderSeparation: true,
+	importOrderSortIndividualImports: true,
 }

@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@manypkg/cli": "^0.20.0",
-		"@trivago/prettier-plugin-sort-imports": "^4.0.0",
+		"@serverless-guru/prettier-plugin-import-order": "^0.4.1",
 		"@types/eslint": "^8.21.1",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node": "^18.14.0",

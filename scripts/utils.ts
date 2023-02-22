@@ -1,5 +1,6 @@
-import { readFileSync } from 'fs-extra'
 import { dirname, resolve } from 'node:path'
+
+import { readFileSync } from 'fs-extra'
 
 export const r = (...pathSegments: string[]) => resolve(__dirname, ...pathSegments)
 
