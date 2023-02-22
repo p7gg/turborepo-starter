@@ -1,3 +1,5 @@
+import { resolve } from 'node:path'
+
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
 
@@ -8,5 +10,10 @@ export default defineConfig({
 	},
 	build: {
 		target: 'esnext',
+	},
+	resolve: {
+		alias: {
+			'@acme/core': resolve(__dirname, '../../packages/core/src'),
+		},
 	},
 })

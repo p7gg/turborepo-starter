@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 
 import withSolid from 'rollup-preset-solid'
 import { defineConfig } from 'vite'
@@ -16,4 +16,9 @@ export default defineConfig({
 			targets: ['esm', 'cjs'],
 		}),
 	},
+	// resolve: {
+	// 	alias: {
+	// 		'@acme/lib': resolve(__dirname, '../lib/src'),
+	// 	},
+	// },
 })
