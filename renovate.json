@@ -1,11 +1,5 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:base", ":preserveSemverRanges"],
-	"updateInternalDeps": true,
-	"packageRules": [
-		{
-			"matchPackagePatterns": ["^@acme/"],
-			"enabled": false
-		}
-	]
+	"updateInternalDeps": true
 }
