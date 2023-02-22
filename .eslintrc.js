@@ -13,6 +13,23 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 		project: ['./apps/*/tsconfig.json', './packages/*/tsconfig.json', './tsconfig.json'], // Allows for the use of rules which require parserServices to be generated
 	},
+	ignorePatterns: [
+		'*.min.*',
+		'CHANGELOG.md',
+		'dist',
+		'LICENSE*',
+		'output',
+		'out',
+		'coverage',
+		'public',
+		'temp',
+		'package-lock.json',
+		'pnpm-lock.yaml',
+		'yarn.lock',
+		'__snapshots__',
+		'!.github',
+		'!.vscode',
+	],
 	rules: {
 		// Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
 		'@typescript-eslint/explicit-function-return-type': 'off',
