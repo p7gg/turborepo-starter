@@ -5,5 +5,59 @@
 		"source.fixAll.eslint": true
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "dev:core",
+				"type": "node-terminal",
+				"request": "launch",
+				"command": "pnpm run dev:core",
+				"serverReadyAction": {
+					"action": "debugWithChrome",
+					"pattern": "started server on .+, url: (https?://.+)",
+					"uriFormat": "%s",
+					"killOnServerStop": true
+				}
+			},
+			{
+				"name": "dev:docs",
+				"type": "node-terminal",
+				"request": "launch",
+				"command": "pnpm run dev:docs",
+				"serverReadyAction": {
+					"action": "debugWithChrome",
+					"pattern": "started server on .+, url: (https?://.+)",
+					"uriFormat": "%s",
+					"killOnServerStop": true
+				}
+			},
+			{
+				"name": "build:core",
+				"type": "node-terminal",
+				"request": "launch",
+				"command": "pnpm run build:core",
+				"serverReadyAction": {
+					"action": "debugWithChrome",
+					"pattern": "started server on .+, url: (https?://.+)",
+					"uriFormat": "%s",
+					"killOnServerStop": true
+				}
+			},
+			{
+				"name": "build:docs",
+				"type": "node-terminal",
+				"request": "launch",
+				"command": "pnpm run build:docs",
+				"serverReadyAction": {
+					"action": "debugWithChrome",
+					"pattern": "started server on .+, url: (https?://.+)",
+					"uriFormat": "%s",
+					"killOnServerStop": true
+				}
+			}
+		],
+		"compounds": []
+	}
 }

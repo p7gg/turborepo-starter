@@ -2,8 +2,10 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"dev": "turbo run dev --parallel",
-		"build": "turbo run build",
+		"dev:core": "turbo run dev --filter=\"acme-ui/core...\" --parallel --continue",
+		"dev:docs": "turbo run dev --filter=\"@acme/docs...\" --parallel --continue",
+		"build:core": "turbo run build --filter=\"@acme/core\"",
+		"build:docs": "turbo run build --filter=\"@acme/docs\"",
 		"type-check": "turbo type-check",
 		"lint": "turbo lint",
 		"lint:fix": "pnpm lint -- --fix && manypkg fix",
