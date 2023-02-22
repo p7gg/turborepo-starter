@@ -15,7 +15,7 @@ void (async () => {
 			throw new Error('Please provide directories to clean up.')
 		}
 
-		const promises: Promise<string>[] = []
+		const promises: Promise<void>[] = []
 
 		for (const dir of dirsToClean) {
 			const fullPath = r(root, dir)
@@ -30,7 +30,7 @@ void (async () => {
 				throw new Error(`The provided path is not a directory: ${fullPath}`)
 			}
 
-			promises.push(remove(fullPath).then(() => dir))
+			promises.push(remove(fullPath))
 		}
 
 		await Promise.all(promises)
