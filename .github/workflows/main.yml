@@ -43,5 +43,8 @@ jobs:
       - name: Install deps (with cache)
         run: pnpm install --child-concurrency 3
 
-      - name: Build
-        run: pnpm build
+      - name: Build core
+        run: pnpm build:core
+
+      - name: Build docs
+        run: pnpm build:docs
