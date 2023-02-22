@@ -24,7 +24,13 @@ module.exports = {
 			'error',
 			{
 				case: 'camelCase',
-				ignore: ['\\.config\\.js', '\\.d\\.ts$', 'issue-\\d+-.*\\.test\\.tsx?$', '\\.(t|j)sx$'],
+				ignore: [
+					'\\.config\\.js',
+					'\\.d\\.ts$',
+					'issue-\\d+-.*\\.test\\.tsx?$',
+					'\\.styles\\.ts$',
+					'\\.(t|j)sx$',
+				],
 			},
 		],
 		'@typescript-eslint/no-unused-vars': [
