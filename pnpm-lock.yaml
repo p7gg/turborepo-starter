@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 patchedDependencies:
   rollup-preset-solid@2.0.1:
-    hash: mxsvd6hjj2zqfkauz3h4rqzsfm
+    hash: ivxypubaffi53ievy4wshp4p5m
     path: patches/rollup-preset-solid@2.0.1.patch
 
 importers:

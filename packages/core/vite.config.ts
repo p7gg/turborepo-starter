@@ -7,10 +7,7 @@ const entry = resolve(__dirname, 'src/index.tsx')
 
 export default defineConfig({
 	build: {
-		lib: {
-			entry,
-			fileName: (_, entry) => `${entry}.js`,
-		},
+		emptyOutDir: true,
 		rollupOptions: withSolid({
 			input: entry,
 			targets: ['esm', 'cjs'],
