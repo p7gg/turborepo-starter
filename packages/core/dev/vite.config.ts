@@ -6,4 +6,9 @@ export default defineConfig({
 		port: 3000,
 	},
 	plugins: [solidPlugin()],
+	// resolve: {
+	// 	alias: {
+	// 		'@acme/lib': resolve(__dirname, '../../lib/src'),
+	// 	},
+	// },
 })
