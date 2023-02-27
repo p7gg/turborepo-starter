@@ -20,7 +20,7 @@ importers:
       eslint: ^8.34.0
       eslint-config-prettier: ^8.6.0
       eslint-plugin-no-only-tests: ^3.1.0
-      eslint-plugin-turbo: ^0.0.8
+      eslint-plugin-turbo: ^0.0.9
       eslint-plugin-unicorn: ^45.0.2
       fs-extra: ^11.1.0
       plop: ^3.1.2
@@ -41,7 +41,7 @@ importers:
       eslint: 8.34.0
       eslint-config-prettier: 8.6.0_eslint@8.34.0
       eslint-plugin-no-only-tests: 3.1.0
-      eslint-plugin-turbo: 0.0.8_eslint@8.34.0
+      eslint-plugin-turbo: 0.0.9_eslint@8.34.0
       eslint-plugin-unicorn: 45.0.2_eslint@8.34.0
       fs-extra: 11.1.0
       plop: 3.1.2
@@ -69,7 +69,7 @@ importers:
       vite: ^4.1.2
       vite-plugin-solid: ^2.5.0
     devDependencies:
-      rollup-preset-solid: 2.0.1_mxsvd6hjj2zqfkauz3h4rqzsfm
+      rollup-preset-solid: 2.0.1_ivxypubaffi53ievy4wshp4p5m
       solid-js: 1.6.11
       vite: 4.1.3
       vite-plugin-solid: 2.5.0_solid-js@1.6.11+vite@4.1.3
@@ -3317,8 +3317,8 @@ packages:
     engines: {node: '>=5.0.0'}
     dev: false
 
-  /eslint-plugin-turbo/0.0.8_eslint@8.34.0:
-    resolution: {integrity: sha512-pExSCmjWw/KFKb3/0PVqxiWb30FbcwDEf6kKv3alvNBSVEzDHalyAGHc9klbLSG+nFmbkfNE3Ky/UHDryCqt8g==}
+  /eslint-plugin-turbo/0.0.9_eslint@8.34.0:
+    resolution: {integrity: sha512-fEsuSnYU3GLtT+s66mUuzDL1LaSieIx5uk3tPO0ToGv7hI2XzOfP24aPkQItTBGl7kq2JaVkRzPwcnfz8hkp0w==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -5338,7 +5338,7 @@ packages:
       glob: 7.2.3
     dev: false
 
-  /rollup-preset-solid/2.0.1_mxsvd6hjj2zqfkauz3h4rqzsfm:
+  /rollup-preset-solid/2.0.1_ivxypubaffi53ievy4wshp4p5m:
     resolution: {integrity: sha512-CPJn3SqADlIxhAW3jwZuAFRyZcz7HPeUAz4f+6BzulxHnK4v6tgoTbMvk8vEsfsvHwiTmX93KHIKdf79aTdVSA==}
     dependencies:
       '@babel/core': 7.21.0
