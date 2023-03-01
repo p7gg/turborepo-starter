@@ -2,10 +2,11 @@
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
-	plugins: ['no-only-tests', 'unicorn', 'turbo'],
+	plugins: ['no-only-tests', 'unicorn', 'solid', 'turbo'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+		'plugin:solid/typescript',
 		'prettier',
 	],
 	parserOptions: {
