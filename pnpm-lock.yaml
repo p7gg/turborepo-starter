@@ -26,7 +26,7 @@ importers:
       fs-extra: ^11.1.0
       plop: ^3.1.2
       prettier: ^2.8.4
-      taze: ^0.8.5
+      taze: ^0.9.0
       tsx: ^3.12.3
       turbo: ^1.8.3
       typescript: ^4.9.5
@@ -48,7 +48,7 @@ importers:
       fs-extra: 11.1.0
       plop: 3.1.2
       prettier: 2.8.4
-      taze: 0.8.5
+      taze: 0.9.0
       tsx: 3.12.3
       turbo: 1.8.3
       typescript: 4.9.5
@@ -85,8 +85,8 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
 
-  /@antfu/ni/0.18.8:
-    resolution: {integrity: sha512-0m++AudwQq+wWAz/Ax7g+sh/wFW51HHQ6BtPLsuTAsFIzWB/bv/0COwZE7BRS+u0nqMb6Ks6nlk6cY1TpPDwHg==}
+  /@antfu/ni/0.20.0:
+    resolution: {integrity: sha512-mBgAuq2b0daSA/14LMyjEjaInD7/Zd7KVXZge7bQPKmtQJFqy9/pWBml6DMkMreeHQEomMtIbbeqReNJ/74kjA==}
     hasBin: true
     dev: false
 
@@ -6073,11 +6073,11 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /taze/0.8.5:
-    resolution: {integrity: sha512-4aB/BEfBah5iJJUDY3vW7xjJl7AzV6bsQx0PHC1DxIVlCE+JUFfpE7dDPZv/4Z+ft4Eg3I69NWnMnaAUL++rDQ==}
+  /taze/0.9.0:
+    resolution: {integrity: sha512-zPs7kNIq1ZZbnBXRrAubcDfvNgPBWQR5uMU7D6+hW7jMLnIBQTlP/mJzVM8jFa0hEQmHym2zyVBU3LObhga1KQ==}
     hasBin: true
     dependencies:
-      '@antfu/ni': 0.18.8
+      '@antfu/ni': 0.20.0
       '@npmcli/config': 6.1.3
       detect-indent: 7.0.1
       pacote: 13.6.2
