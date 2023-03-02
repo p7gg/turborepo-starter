@@ -1,6 +1,8 @@
 /* @refresh reload */
-import { Component, createSignal } from 'solid-js'
+import { createSignal } from 'solid-js'
 import { render } from 'solid-js/web'
+
+import type { Component } from 'solid-js'
 
 const App: Component = () => {
 	const [count, setCount] = createSignal(0)
