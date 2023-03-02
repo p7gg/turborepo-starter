@@ -46,7 +46,7 @@ module.exports = {
 					'\\.config\\.js',
 					'\\.d\\.ts$',
 					'issue-\\d+-.*\\.test\\.tsx?$',
-					'\\.styles\\.ts$',
+					'\\.(styles|css)\\.ts$',
 					'\\.(t|j)sx$',
 				],
 			},
