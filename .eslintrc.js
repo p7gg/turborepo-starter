@@ -38,6 +38,7 @@ module.exports = {
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		'no-only-tests/no-only-tests': 'error',
+		'no-console': 'error',
 		'@typescript-eslint/no-empty-interface': 'off',
 		'unicorn/filename-case': [
 			'error',
@@ -115,9 +116,11 @@ module.exports = {
 			},
 		},
 		{
-			files: ['packages/**/*'],
+			files: ['scripts/*'],
 			rules: {
-				'no-console': 'error',
+				'unicorn/prefer-module': 'off',
+				'unicorn/prefer-top-level-await': 'off',
+				'no-console': 'off',
 			},
 		},
 		{
