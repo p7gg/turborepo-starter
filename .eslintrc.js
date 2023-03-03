@@ -2,12 +2,13 @@
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
-	plugins: ['no-only-tests', 'unicorn', 'solid', 'turbo'],
+	plugins: ['no-only-tests', 'solid', 'turbo'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+		'plugin:unicorn/recommended',
 		'plugin:solid/typescript',
-		'prettier',
+		'plugin:prettier/recommended',
 	],
 	parserOptions: {
 		ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
@@ -100,8 +101,7 @@ module.exports = {
 		{
 			files: ['apps/**/*'],
 			rules: {
-				// Todo: enable these for even stronger linting! 💪
-				'@typescript-eslint/no-floating-promises': 'off',
+				'@typescript-eslint/no-floating-promises': 'error',
 				'@typescript-eslint/no-unused-vars': 'off',
 			},
 		},
@@ -118,6 +118,15 @@ module.exports = {
 			files: ['packages/**/*'],
 			rules: {
 				'no-console': 'error',
+			},
+		},
+		{
+			files: ['*.js'],
+			rules: {
+				'@typescript-eslint/no-var-requires': 'off',
+				'@typescript-eslint/explicit-module-boundary-types': 'off',
+				'unicorn/no-process-exit': 'off',
+				'unicorn/prefer-module': 'off',
 			},
 		},
 	],

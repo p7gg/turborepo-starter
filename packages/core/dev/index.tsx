@@ -17,4 +17,4 @@ const App: Component = () => {
 	)
 }
 
-render(() => <App />, document.getElementById('root') as HTMLElement)
+render(() => <App />, document.querySelector('#root') as HTMLElement)
