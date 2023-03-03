@@ -9,14 +9,14 @@
 				"isDefault": true
 			},
 			"problemMatcher": [],
-			"label": "Build core package",
+			"label": "Run `build` command within core package and it's dependencies",
 			"detail": "turbo run build --filter=\"@acme/core\""
 		},
 		{
 			"type": "npm",
 			"script": "dev:core",
 			"problemMatcher": [],
-			"label": "Develop core package",
+			"label": "Run `dev` command within core package and it's dependencies",
 			"detail": "turbo run dev --filter=\"@acme/core...\" --parallel --continue"
 		},
 		{
@@ -27,14 +27,14 @@
 				"isDefault": true
 			},
 			"problemMatcher": [],
-			"label": "Build docs app",
+			"label": "Run `build` command within docs app and it's dependencies",
 			"detail": "turbo run build --filter=\"@acme/docs\""
 		},
 		{
 			"type": "npm",
 			"script": "dev:docs",
 			"problemMatcher": [],
-			"label": "Develop docs app",
+			"label": "Run `dev` command within docs app and it's dependencies",
 			"detail": "turbo run dev --filter=\"@acme/docs...\" --parallel --continue"
 		}
 	]
