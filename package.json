@@ -15,7 +15,7 @@
 		"plop": "plop",
 		"update-deps": "taze -w -r -I"
 	},
-	"packageManager": "pnpm@7.28.0",
+	"packageManager": "pnpm@7.29.0",
 	"engines": {
 		"node": ">=18.0.0"
 	},
