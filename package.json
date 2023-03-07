@@ -13,7 +13,7 @@
 		"format:write": "pnpm format --write",
 		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules",
 		"plop": "plop",
-		"update-deps": "taze -w -r -I"
+		"update-deps": "pnpm -r up -i -L"
 	},
 	"packageManager": "pnpm@7.29.0",
 	"engines": {
@@ -43,7 +43,6 @@
 		"fs-extra": "^11.1.0",
 		"plop": "^3.1.2",
 		"prettier": "^2.8.4",
-		"taze": "^0.9.0",
 		"tsx": "^3.12.3",
 		"turbo": "^1.8.3",
 		"typescript": "^4.9.5"
