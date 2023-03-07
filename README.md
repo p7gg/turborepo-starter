@@ -23,7 +23,6 @@ This monorepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
-- [Taze](https://github.com/antfu/taze) A modern cli tool that keeps your deps fresh
 
 ### Build
 
