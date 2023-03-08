@@ -15,7 +15,7 @@
 		"plop": "plop",
 		"update-deps": "pnpm -r up -i -L"
 	},
-	"packageManager": "pnpm@7.29.0",
+	"packageManager": "pnpm@7.29.1",
 	"engines": {
 		"node": ">=18.0.0"
 	},
