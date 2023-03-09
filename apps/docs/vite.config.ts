@@ -1,7 +1,10 @@
 import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
 export default defineConfig({
 	plugins: [solidPlugin()],
