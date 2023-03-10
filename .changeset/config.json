@@ -1,0 +1,13 @@
+{
+	"$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+	"changelog": ["@changesets/changelog-github", { "repo": "p7gg/acme" }],
+	"commit": false,
+	"access": "public",
+	"baseBranch": "main",
+	"fixed": [["@acme/*"]],
+	"updateInternalDependencies": "patch",
+	"ignore": [],
+	"___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+		"onlyUpdatePeerDependentsWhenOutOfRange": false
+	}
+}

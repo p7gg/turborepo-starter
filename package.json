@@ -13,7 +13,9 @@
 		"format:write": "pnpm format --write",
 		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules",
 		"plop": "plop",
-		"update-deps": "pnpm -r up -i -L"
+		"update-deps": "pnpm -r up -i -L",
+		"version": "changeset version && pnpm i --no-frozen-lockfile && git add .",
+		"release": "pnpm turbo run build --filter='./packages/*' && changeset publish"
 	},
 	"packageManager": "pnpm@7.29.1",
 	"engines": {
@@ -25,6 +27,8 @@
 		}
 	},
 	"dependencies": {
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.0",
 		"@manypkg/cli": "^0.20.0",
 		"@serverless-guru/prettier-plugin-import-order": "^0.4.1",
 		"@types/eslint": "^8.21.1",
