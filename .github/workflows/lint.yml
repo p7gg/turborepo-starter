@@ -45,9 +45,6 @@ jobs:
       - name: Run ESLint
         run: pnpm lint
 
-      - name: Run Manypkg
-        run: pnpm manypkg check
-
       - name: Run ts-check
         run: pnpm type-check
 

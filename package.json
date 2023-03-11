@@ -8,7 +8,7 @@
 		"build:docs": "turbo run build --filter=\"@acme/docs\"",
 		"type-check": "turbo type-check",
 		"lint": "turbo lint",
-		"lint:fix": "pnpm lint -- --fix && manypkg fix",
+		"lint:fix": "pnpm lint -- --fix",
 		"format": "prettier \"**/*.{js,ts,json,css,tsx,jsx,md,html}\" --ignore-unknown",
 		"format:write": "pnpm format --write",
 		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules",
@@ -29,7 +29,6 @@
 	"dependencies": {
 		"@changesets/changelog-github": "^0.4.8",
 		"@changesets/cli": "^2.26.0",
-		"@manypkg/cli": "^0.20.0",
 		"@serverless-guru/prettier-plugin-import-order": "^0.4.1",
 		"@types/eslint": "^8.21.1",
 		"@types/fs-extra": "^11.0.1",
