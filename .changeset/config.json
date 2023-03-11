@@ -6,7 +6,7 @@
 	"baseBranch": "main",
 	"fixed": [["@acme/*"]],
 	"updateInternalDependencies": "patch",
-	"ignore": [],
+	"ignore": ["@acme/docs"],
 	"___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
 		"onlyUpdatePeerDependentsWhenOutOfRange": false
 	}
