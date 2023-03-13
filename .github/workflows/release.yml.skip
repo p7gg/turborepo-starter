@@ -10,6 +10,10 @@ env:
 
 jobs:
   version:
+    permissions:
+      contents: write # to create release
+      issues: write # to post issue comments
+      pull-requests: write # to create pull request
     timeout-minutes: 15
     concurrency: ${{ github.workflow }}-${{ github.ref }}
     runs-on: ubuntu-latest
