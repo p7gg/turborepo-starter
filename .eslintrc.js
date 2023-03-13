@@ -40,6 +40,10 @@ module.exports = {
 		'no-only-tests/no-only-tests': 'error',
 		'no-console': 'error',
 		'@typescript-eslint/no-empty-interface': 'off',
+		'unicorn/no-array-callback-reference': 'off',
+		'unicorn/no-for-loop': 'off',
+		'unicorn/no-null': 'off',
+		'unicorn/no-thenable': 'off',
 		'unicorn/filename-case': [
 			'error',
 			{
@@ -124,7 +128,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['*.js'],
+			files: ['**/*.js', '**/*.cjs'],
 			rules: {
 				'@typescript-eslint/no-var-requires': 'off',
 				'@typescript-eslint/explicit-module-boundary-types': 'off',
