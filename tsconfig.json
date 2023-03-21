@@ -14,7 +14,7 @@
 		"exactOptionalPropertyTypes": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
-		"importsNotUsedAsValues": "error",
+		"verbatimModuleSyntax": true,
 		"skipLibCheck": true,
 		"noEmit": true,
 		"allowJs": true,
