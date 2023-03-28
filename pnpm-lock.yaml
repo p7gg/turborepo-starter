@@ -23,7 +23,7 @@ importers:
       eslint-plugin-no-only-tests: ^3.1.0
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin-solid: ^0.12.0
-      eslint-plugin-turbo: ^0.0.10
+      eslint-plugin-turbo: ^1.0.0
       eslint-plugin-unicorn: ^46.0.0
       fs-extra: ^11.1.1
       plop: ^3.1.2
@@ -46,7 +46,7 @@ importers:
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-prettier: 4.2.1_ose2zoovovx4ulolhifz3tfzx4
       eslint-plugin-solid: 0.12.0_j4766f7ecgqbon3u7zlxn5zszu
-      eslint-plugin-turbo: 0.0.10_eslint@8.36.0
+      eslint-plugin-turbo: 1.8.6_eslint@8.36.0
       eslint-plugin-unicorn: 46.0.0_eslint@8.36.0
       fs-extra: 11.1.1
       plop: 3.1.2
@@ -3241,8 +3241,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-turbo/0.0.10_eslint@8.36.0:
-    resolution: {integrity: sha512-T7QRwF4rjBQCJD9AHLHn9ShtHCHNkfIZW5Oio92WtQYhoU5jZCU3ynU+ONFXLuvoUx4dJ19WergIyHL+DwL2+g==}
+  /eslint-plugin-turbo/1.8.6_eslint@8.36.0:
+    resolution: {integrity: sha512-LieXzur+4XtIsLst8GdupTMhvGn2ebFetG3AVErh2jHBy1EobPHbatjcdNZQMy5EsdG35axQVB8KFF3jo4u+OQ==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
