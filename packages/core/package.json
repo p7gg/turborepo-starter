@@ -42,9 +42,9 @@
 	},
 	"devDependencies": {
 		"rollup-preset-solid": "^2.0.1",
-		"solid-js": "^1.6.16",
+		"solid-js": "^1.7.2",
 		"vite": "^4.2.1",
-		"vite-plugin-solid": "^2.6.1"
+		"vite-plugin-solid": "^2.7.0"
 	},
 	"peerDependencies": {
 		"solid-js": "^1.6.0"

@@ -14,9 +14,9 @@
 	"license": "MIT",
 	"devDependencies": {
 		"vite": "^4.2.1",
-		"vite-plugin-solid": "^2.6.1"
+		"vite-plugin-solid": "^2.7.0"
 	},
 	"dependencies": {
-		"solid-js": "^1.6.16"
+		"solid-js": "^1.7.2"
 	}
 }
