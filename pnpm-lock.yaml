@@ -34,8 +34,8 @@ importers:
         specifier: ^5.58.0
         version: 5.58.0(eslint@8.38.0)(typescript@5.0.4)
       colorette:
-        specifier: ^2.0.19
-        version: 2.0.19
+        specifier: ^2.0.20
+        version: 2.0.20
       eslint:
         specifier: ^8.38.0
         version: 8.38.0
@@ -2833,6 +2833,11 @@ packages:
 
   /colorette@2.0.19:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
+    dev: true
+
+  /colorette@2.0.20:
+    resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
+    dev: false
 
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
