@@ -17,7 +17,7 @@
 		"version": "changeset version && pnpm i --no-frozen-lockfile && git add .",
 		"release": "pnpm turbo run build --filter='./packages/*' && changeset publish"
 	},
-	"packageManager": "pnpm@8.5.1",
+	"packageManager": "pnpm@8.6.0",
 	"engines": {
 		"node": ">=19.0.0"
 	},
