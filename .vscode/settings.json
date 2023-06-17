@@ -4,6 +4,16 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"typescript.preferences.importModuleSpecifier": "shortest",
+	"javascript.preferences.importModuleSpecifier": "shortest",
+	"eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+	"eslint.workingDirectories": [{ "pattern": "apps/*/" }, { "pattern": "packages/*/" }]
 }
