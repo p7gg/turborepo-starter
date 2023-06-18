@@ -1,34 +1,21 @@
 {
 	"compilerOptions": {
-		"module": "esnext",
-		"lib": ["esnext", "dom", "dom.iterable"],
-		"target": "es2020",
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedIndexedAccess": true,
-		"noPropertyAccessFromIndexSignature": true,
-		"allowUnusedLabels": false,
-		"allowUnreachableCode": false,
-		"exactOptionalPropertyTypes": true,
-		"noImplicitOverride": true,
-		"noImplicitReturns": true,
-		"verbatimModuleSyntax": true,
-		"skipLibCheck": true,
-		"noEmit": true,
+		"target": "es2017",
+		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"checkJs": true,
-		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
 		"esModuleInterop": true,
-		"baseUrl": ".",
-		"typeRoots": ["./node_modules/@types", "./types"],
-		"paths": {
-			"@acme/core": ["packages/core/src"],
-			"@acme/core/*": ["packages/core/src/*"]
-		},
-		"types": ["node"]
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"noUncheckedIndexedAccess": true
 	},
-	"include": ["apps", "packages", "scripts", ".eslintrc.js", "plopfile.js"],
-	"exclude": ["node_modules"]
+	"include": [".eslintrc.js", ".prettierrc.js"]
 }

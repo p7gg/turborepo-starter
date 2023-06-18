@@ -1,5 +1,9 @@
-/** @type {import("prettier").Config} */
-module.exports = {
+/** @typedef  {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig*/
+/** @typedef  {import("prettier").Config} PrettierConfig*/
+/** @typedef  {{ tailwindConfig: string }} TailwindConfig*/
+
+/** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
+const config = {
 	printWidth: 100,
 	trailingComma: 'all',
 	tabWidth: 2,
@@ -9,20 +13,25 @@ module.exports = {
 	arrowParens: 'always',
 	endOfLine: 'auto',
 	useTabs: true,
-	plugins: [require.resolve('@serverless-guru/prettier-plugin-import-order')],
+	plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
 	importOrder: [
-		'^(solid-js/(.*)$)|^(solid-js$)',
+		'<BUILT_IN_MODULES>|^vite$',
+		'',
+		'^react(/.*)?$|^react-dom(/.*)?$',
+		// '^next(/.*)?$',
+		// '^solid-js(/.*)?$',
+		'',
 		'<THIRD_PARTY_MODULES>',
-		'^@acme/(.*)$',
 		'',
 		'^~/(.*)$',
+		'',
 		'^[./]',
+		'',
+		'<TYPES>|<TYPES>^[./]',
 	],
-	importOrderTypeImportsToBottom: true,
-	importOrderBuiltinModulesToTop: true,
-	importOrderCaseInsensitive: false,
 	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
-	importOrderMergeDuplicateImports: true,
-	importOrderSeparation: true,
-	importOrderSortIndividualImports: true,
+	importOrderTypeScriptVersion: '5.0.0',
+	tailwindConfig: './packages/config/tailwind',
 }
+
+module.exports = config

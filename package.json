@@ -2,52 +2,28 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"dev:core": "turbo run dev --filter=\"@acme/core...\" --parallel --continue",
-		"dev:docs": "turbo run dev --filter=\"@acme/docs...\" --parallel --continue",
-		"build:core": "turbo run build --filter=\"@acme/core\"",
-		"build:docs": "turbo run build --filter=\"@acme/docs\"",
+		"build": "turbo build",
+		"clean": "git clean -xdf node_modules dist .next",
+		"clean:workspaces": "turbo clean",
+		"dev": "turbo dev --parallel",
+		"dev:web": "turbo dev --parallel --filter @acme/web",
+		"format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
+		"lint": "turbo lint && manypkg check",
+		"lint:fix": "turbo lint:fix && manypkg fix",
 		"type-check": "turbo type-check",
-		"lint": "turbo lint",
-		"lint:fix": "pnpm lint -- --fix",
-		"format": "prettier \"**/*.{js,ts,json,css,tsx,jsx,md,html}\" --ignore-unknown",
-		"format:write": "pnpm format --write",
-		"clean": "turbo run clean --parallel && tsx ./scripts/clean.ts node_modules",
-		"plop": "plop",
-		"update-deps": "pnpm -r up -i -L",
-		"version": "changeset version && pnpm i --no-frozen-lockfile && git add .",
-		"release": "pnpm turbo run build --filter='./packages/*' && changeset publish"
+		"update-deps": "pnpm up -iLr"
 	},
 	"packageManager": "pnpm@8.6.2",
 	"engines": {
-		"node": ">=19.0.0"
-	},
-	"pnpm": {
-		"patchedDependencies": {
-			"rollup-preset-solid@2.0.1": "patches/rollup-preset-solid@2.0.1.patch"
-		}
+		"node": ">=20.0.3"
 	},
 	"dependencies": {
-		"@changesets/changelog-github": "^0.4.8",
-		"@changesets/cli": "^2.26.1",
-		"@serverless-guru/prettier-plugin-import-order": "^0.4.2",
-		"@types/eslint": "^8.40.0",
-		"@types/fs-extra": "^11.0.1",
-		"@types/node": "^20.2.4",
-		"@typescript-eslint/eslint-plugin": "^5.59.7",
-		"@typescript-eslint/parser": "^5.59.7",
-		"colorette": "^2.0.20",
-		"eslint": "^8.41.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-no-only-tests": "^3.1.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-solid": "^0.12.1",
-		"eslint-plugin-turbo": "^1.9.9",
-		"eslint-plugin-unicorn": "^47.0.0",
-		"fs-extra": "^11.1.1",
-		"plop": "^3.1.2",
+		"@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+		"@manypkg/cli": "^0.21.0",
+		"@types/prettier": "^2.7.3",
 		"prettier": "^2.8.8",
-		"tsx": "^3.12.7",
-		"turbo": "^1.9.9",
-		"typescript": "^5.0.4"
+		"prettier-plugin-tailwindcss": "^0.3.0",
+		"turbo": "^1.10.3",
+		"typescript": "^5.1.3"
 	}
 }
