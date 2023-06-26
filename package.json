@@ -15,7 +15,7 @@
 	},
 	"packageManager": "pnpm@8.6.5",
 	"engines": {
-		"node": ">=20.0.3"
+		"node": ">=v20.3.1"
 	},
 	"dependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.0.2",
