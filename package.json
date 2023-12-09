@@ -13,7 +13,7 @@
 		"type-check": "turbo type-check",
 		"update-deps": "pnpm up -iLr"
 	},
-	"packageManager": "pnpm@8.6.5",
+	"packageManager": "pnpm@8.12.0",
 	"engines": {
 		"node": ">=v20.3.1"
 	},
